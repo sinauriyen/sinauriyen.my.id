@@ -47,7 +47,7 @@ Mungkin sedikit penjelasan tentang DHCP server diatas, oke langsung saja kita ko
 
 ![b](/assets/img/dhcp-server/awal-net-inter.png "awal-net-inter")
 * kemudian kalian tambahkan di bawah baris `iface enp0s3 inet dhcp`
-* ketikan perintah seperti di bawah ini 
+* ketikan perintah seperti di bawah ini: 
 ```python
     auto enp0s8
     iface enp0s8 inet static
@@ -68,7 +68,7 @@ Cek IP dengan perintah `ip a`
 
 ### **3. Menginstall package DHCP server**
 &nbsp;&nbsp;&nbsp;&nbsp;Sebelum menginstall package isc-dhcp-server tambahkan repository di `/etc/apt/sources.list`
-dengan perintah `nano /etc/apt/sources.list` lalu tambahkan di baris paling akhir
+dengan perintah: `nano /etc/apt/sources.list` lalu tambahkan di baris paling akhir
 * `deb http://ftp.us.debian.org/debian/ bullseye main contrib non-free`
 * `deb-src http://ftp.us.debian.org/debian/ bullseye main contrib non-free`
 
@@ -132,7 +132,7 @@ Kalian bisa pergi ke **Network and internet >> Network Coneections** pilih local
 ![b](/assets/img/dhcp-server/pengujian2.png "pengujian2")
 &nbsp;&nbsp;&nbsp;&nbsp;
 
-> Bisa dilihat di client Windows 7 mendaoatkan ip dari range 192.168.2.2 - 192.168.2.100
+> Bisa dilihat di client Windows 7 mendapatkan ip dari range 192.168.2.2 - 192.168.2.100
 
 Cukup segitu penjelasan tentang DHCP server dan juga konfigurasinya di Debian kalau ada yang ingin di tanyakan silahkan bisa tulis di kolom komentar di bawah untuk kurang lebihnya saya minta maaf.
 
