@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+body {
+    background-color: #C7F9CC;
+    max-height: 9999!important;
+}
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.font-weight-bold {
+    font-weight: 700!important;
+    }
+/* Bagian navbar */
+nav a:hover {
+    color: #000!important;
+}
+/* akhir navbar */
+
+/* Bagian jumbotron */
+.jumbotron-body {
+    background-color: #def7e2;
+ 
+}
+.img-jumbotron {
+    width: 180px;
+    border-radius: 12px;
+}
+.jumbotron h1  {
+    color: #000;
+}
+.kopi-hangat svg {
+    margin-left: 50em;
+    margin-top: -5.7em;
+    position: absolute;
+}
+/* akhir jumbotron */
+
+/* Bagian artikel */
+.author-single {
+    font-size: 15px;
+}
+#h2-single {
+    font-family: 'Roboto Slab', serif!important;
+    font-weight: bold;
+    font-size: 32px;
+}
+.img-index {
+    border-radius: 8px!important;
+}
+/* h6, .h6 {
+    font-size: 1rem;
+} */
+
+.judul-artikel {
+    font-family: 'Roboto Slab', serif!important;
+} 
+code {
+    font-size: 0.875em;
+    word-wrap: break-word;
+}
+.kontent-faruq blockquote {
+    margin: 1.5em 0;
+    padding: 1em;
+    font-family: inherit;
+    width: 100%;
+    color: #6f6f6f;
+    border-left: 4px solid silver;
+    background-color: #fafafa;
+}
+blockquote {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+.kontent-faruq pre {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 500;
+    padding: 1em;
+    margin-bottom: 1.75rem;
+    font-size: .9rem;
+    white-space: pre;
+    border-radius: 8px;
+    line-height: 1.5em;
+}
+p img {
+    max-width: 100%;
+    height: auto;
+}
+/* akhir artikel */
+
+/* Bagian tenteang blog */
+.tentang-blog {
+    background-color: #def7e2;
+}
+/* akhir tentang blog */
+
+/* Bagian sidebar */
+.header-sidebar {
+    font-size: 18px;
+    font-family: 'Roboto Slab', serif!important;
+}
+.kategori-aside:hover {
+    background-color: #e9ecef;
+    border-radius: 100px;
+}
+.kategori-aside {
+    font-family: 'Inter', sans-serif;
+    text-transform: capitalize;
+    color: #57cc99;
+}
+.h5-kategori {
+    background-color: #57cc99!important;
+    font-family: 'Roboto Slab', serif!important;
+}
+.card-header {
+    background-color: #57cc99!important;
+    
+}
+/* ===BAGIAN UKURAN MOBILE=== */
+
+
+
+/* ===AKHIR UKURAN MOBILE=== */
+/* akhir sidebar */
+
+/* Bagian pagination */ 
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff!important;
+    background-color: #57cc99!important;
+    border-color: #57cc99!important;
+}
+.page-link {
+    position: relative;
+    display: block;
+    color: #57cc99!important;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.page-item.disabled .page-link {
+    color: #6c757d!important;
+    pointer-events: none;
+    background-color: #fff;
+    border-color: #dee2e6;
+}
+.kategori-lengkap, .akategori-lengkap {
+    color: #000;
+    text-decoration: none;
+}
+.akategori-lengkap:hover {
+    text-decoration: underline;
+    color: #57cc99!important;
+}
+/* akhir pagination */
+
+/* Bgian kategori */
+.flex-kontent {
+    display: flex;
+    /* align-items: flex-end; */
+}
+.h6-kontent:hover {
+    text-decoration: underline;
+}
+.kecil{
+    font-size: 18px!important;
+}
+.jarak-nav {
+    margin-top: 7em;
+}
+/* akhir kategori */
+
+/* ======= */
+
+
+/* ======= */
+
+/* Bagian footer */
+footer a:hover {
+    color: #000!important;
+}
+footer a {
+    color: #fff;
+}
+footer p {
+    color: #fff;
+}
+footer span {
+    color: #fff;
+}
+/* akhir footer */

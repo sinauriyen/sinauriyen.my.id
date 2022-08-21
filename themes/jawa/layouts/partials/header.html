@@ -1,0 +1,46 @@
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #57cc99;">
+  <div class="container">
+    <a class="navbar-brand" href="{{.Site.BaseURL}}"><img class="" src="/image/logo.png" alt="" width="30" height="30"> {{ .Site.Title }}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> 
+    <div class="collapse navbar-collapse" id="navbarScroll" style="color: #fff;">
+      <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll ms-auto" style="--bs-scroll-height: 100px;">
+        <li class="nav-item nav-icons">
+          <a class="nav-link" href="{{.Site.BaseURL}}"  style="color: #fff;"><i class="fas fa-home mx-1"></i> Beranda</a>
+        </li>
+        <!--  <li class="nav-item nav-icons">
+          <a class="nav-link" href="#"  style="color: #fff;">Link</a>
+        </li>  -->
+        <li class="nav-item nav-icons dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="color: #fff;" ><i class="fas fa-edit"></i> Soal & Jawaban
+          </a>
+          <ul class="dropdown-menu border" aria-labelledby="navbarScrollingDropdown" style="background-color: #57cc99;">
+            <li><a class="dropdown-item" href="/categories/administrasi-sistem-jaringan"  style=" color: #fff;">Administrasi Sistem Jaringan</a></li>
+          </ul>
+        </li> 
+      </ul>
+      {{/*  <form class="d-flex ms-3">
+        <input class="form-control me-2" type="search" placeholder="Mau cari artikel apa ?" aria-label="Search">
+        <button class="btn btn-light" type="submit"><i class="fas fa-search"></i></button>
+      </form>  */}}
+    </div>
+  </div>
+</nav>
+<!-- BAGIAN JUMBOTRON -->
+{{ if .IsHome }}
+<header class="jumbotron jumbotron-fluid pt-5 jumbotron-body">
+  <div class="container">
+    <div class="row">
+      <div class="my-5 text-center">
+          <h1 class="display-4 font-weight-bold">{{ .Site.Title }}</h1>
+          <p class="lead text-muted" style="margin-top: -15px;">Budayakan <strong class="font-weight-bold">membaca</strong> <i>(sampai paham)</i></p>
+      </div>
+    </div>
+  </div>
+</header>
+{{ end }}
+<!-- BAGIAN AKHIR JUMBOTRON -->
+
+<!-- {{ .Site.Title }} -->

@@ -1,0 +1,36 @@
+{{ define "main" }}
+    <div class="section-header text-center jarak-nav">
+        <h1 class="text-capitalize">{{ .Title }}</h1>
+        <p class="lead text-muted kecil mb-5">Artikel Berdasarkan Kategori</p>
+    </div>
+            <div class="container mb-4">
+                <div class="section-body">
+                    <div class="row">
+                        {{ range .Paginator.Pages }}
+                        <div class="col-md-6 col-lg-4 mb-4 d-flex">
+                            <div class="card shadow-sm p-3 mb-2 bg-body" style="border-radius: 8px;">
+                                <a href=" {{ .Permalink }} ">
+                                  
+                                    <img src="/image/{{ .Params.featured_image }}" alt="sinaudhisik" class="card-img-top img-index">
+                                </a>
+                                <div class="card-body">
+                                        <h6 class="card-title mb-1">
+                                          <a href=" {{ .Permalink }} " style="text-decoration: none; color: black;"  class="judul-artikel fw-bolder fs-5">
+                                            {{ .Title }}
+                                          </a>
+                                        </h6>
+                                        <div class="text-secondary small">
+                                          {{ or .Params.description .Summary }}
+                                        </div>         
+                                </div>
+                              </div>
+                            </div>
+                        {{ end }}
+                        <div class="artikel-pagination">
+                            {{ template "_internal/pagination.html" . }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+{{end}}

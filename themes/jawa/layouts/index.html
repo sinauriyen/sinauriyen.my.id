@@ -1,0 +1,97 @@
+{{ define "main" }}
+<!-- BAGIAN ARTIKEL-->
+<div class="container">
+  <div class="row">
+    <div class="container artikel-body pt-5">
+      <div class="row mb-3 text-center">
+           <h2 class="h2">Artikel Terbaru</h2>
+            <p class="lead text-muted kecil">Mau cari artikel apa ?</p>
+    </div>
+  </div>
+      {{/*  {{ range (.Paginate (where .Site.RegularPages "Section" "asj")).Pages }}  */}}
+      {{ range .Site.RegularPages }}
+      <div class="col-md-6 col-lg-4 mb-4 d-flex">
+          <div class="card shadow-sm p-3 mb-2 bg-body" style="border-radius: 8px;">
+              <a href="{{ .Permalink }}">
+                  <img src="/image/{{ .Params.featured_image }}" alt="sinauriyen" class="card-img-top img-index">
+              </a>
+              <div class="card-body">
+                      <h6 class="card-title mb-1">
+                        <a href="{{ .Permalink }}" style="text-decoration: none; color: black;" class="judul-artikel fw-bolder fs-5">
+                          {{ .Title }}
+                        </a>
+                      </h6>
+                      <div class="text-secondary small">
+                        {{ or .Params.description .Summary }}
+                      </div>         
+              </div>
+            </div>
+          </div>
+          {{ end }}     
+      </div>
+  </div>
+<!-- AKHIR BAGIAN ARTIKEL -->
+
+<!-- BAGIAN PAGINATION -->
+  <div class="container text-center mt-4 mb-5">
+    <div class="artikel-pagination">
+      {{ template "_internal/pagination.html" . }}
+    </div>
+  </div>
+<!-- AKHIR BAGIAN PAGINATION -->
+
+<!-- BAGIAN TENTANG BLOG -->
+<div class="tentang-blog pt-3 pb-3 pt-md-5 pb-md-5">
+  <div class="container text-start">
+    <h3 class="h6-tentang">
+      <i class="fas fa-seedling pe-2"></i>"Sinau Riyen"
+    </h3>
+    <p class="penjelasan pt-1">
+      <i class="fas fa-quote-left pe-2"></i>Blog ini saya buat untuk dokumtasi belajar saya sendiri, tapi menurutku lebih baik membagikan ilmu ke orang lain agar bermanfaat.<br>
+      <span class="ms-4"></span> Semoga blog ini bisa membantu permasalahan kalian atau membantu kalian untuk belajar.<i class="fas fa-quote-right ps-2"></i>
+    </p>
+  </div>
+</div>
+<!-- AKHIR BAGIAN TENTANG BLOG-->
+
+<!-- BAGIAN KATEGORI -->
+<div class="container" id="kategori">
+  <div class="text-center row my-5">
+    <div class="col-12">
+    <h2 class="h2">Artikel Berdasarkan Kategori</h2>
+    <p class="lead text-muted kecil">List Kategori</p>
+    </div>
+  </div>
+  <div class="row">
+    {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+    <div class="col-12 col-md-6 col-lg-4 mb-4">
+    <div class="card-header">
+    <h5 class="card-title h5-kategori text-center text-capitalize py-2">{{ $name }}</h5>
+    </div>
+    {{ range . }}
+    <div class="list-group list-group-flush shadow-sm">
+      <a href="{{ .Permalink }}" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="flex-kontent">
+          <h6 class="flex-fill bd-highlight pt-4 text-capitalize h6-kontent ">{{ .Title }}</h6>
+          <div class="flex-gambar-kontent">
+            <i class="bi bi-pin-angle-fill"></i>
+          </div>
+        </div>
+      </a>
+    </div>
+    {{end}}
+  <!-- Pagination -->
+  <div class="container mb-4">
+    <p class="kategori-lengkap my-1 text-end">
+      <a class="akategori-lengkap" href="/categories/{{ $name }}">Lihat lebih banyak ---></a>
+    </p>
+  </div>
+  <!-- Akhir Bagian Pagination -->
+  </div>
+
+  {{ end }}
+</div>
+</div>
+<!-- AKHIR BAGIAN KATEGORI -->
+
+{{ end }}

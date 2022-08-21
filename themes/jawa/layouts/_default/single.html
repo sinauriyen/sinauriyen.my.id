@@ -1,0 +1,167 @@
+
+{{ define "main" }}
+<div class="container my-0 my-md-5 bagian-artikel pt-5" style="height: auto !important;">
+    <div class="row" style="height: auto!important;">
+        <div class="post col-sm-12 col-lg-8 px-0 px-md-3">
+            <article class="card shadow-sm p-3 mb-3 bg-body" style="border-radius: 8px;">
+                <div class="card-body p-md-5">
+                    <p class="author-single">
+                        <img src="{{ .Site.Author.image }}" class="rounded-circle" width="32" height="32" />
+                        {{ .Params.author }} <span class="text-end" style="font-size: 12px; color: rgb(190, 184, 184);">
+                            • Di tulis pada {{  .Date.Format "2006-01-02"  }}
+                        </span>
+                    </p>       
+                    <h2 class="font-weight-bold" id="h2-single">{{.Title}}</h2>
+                    <hr style="background-color: black;">
+                    <div class="tagInfo">
+                        {{ with .Params.tags }}
+                        {{ range .}}
+                        <span class="badge badge-info"><a class="text-decoration-none text-dark"
+                        href="/tags/{{ . | urlize }}">#{{ . }}</a></span>
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                    <br><br>
+                    <div class="center">
+                        <div>
+                            <img class="img-fluid" src="/image/{{ .Params.featured_image }}" alt="banner" srcset="">
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="kontent-faruq">
+                        <p class="text-decoration-none">{{ .Content }}</p>
+                    </div>
+                </div>
+            </article>
+<h3 class="fw-bold py-4"># Rekomendasi Artikel</h3>
+{{/*  <div class="card" style="width: 18rem;">
+    <img src="/img/dhcp.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>  */}}
+<div class="border p-4" style="border-radius: 8px;">
+    <div class="row row-cols-2">
+        {{ range first 4 ( where ( where .Site.Pages.ByDate.Reverse ".Params.tags" "intersect" .Params.tags ) "Permalink" "!=" .Permalink ) }}
+      <div class="col">
+        <div class="card my-2 mx-2" style="border-radius: 8px;">
+            <div class="card-body">
+                  <a href=" {{ .Permalink }} ">
+                    <img src="/image/{{ .Params.featured_image }}" alt="sinauriyen" class="card-img-top img-index">
+                </a>
+                <div class="card-body">
+                        <h6 class="card-title mb-1">
+                          <a href=" {{ .Permalink }} " style="text-decoration: none; color: black;"  class="judul-artikel fw-bolder fs-5">
+                            {{ .Title }}
+                          </a>
+                        </h6>
+                        <div class="text-secondary small">
+                          {{ or .Params.description .Summary }}
+                        </div>         
+                </div>
+            </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+</div>
+                <div id="disqus_thread" class="card shadow-sm mt-2 p-3 mb-3 bg-body" style="border-radius: 8px;">
+                    <div id="disqus_thread"></div>
+                        <script>
+                            /**
+                            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                            /*
+                            var disqus_config = function () {
+                            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                            };
+                            */
+                            (function() { // DON'T EDIT BELOW THIS LINE
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://sinauriyen.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                            })();
+                        </script>
+                        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                </div>
+        </div>
+            <aside class="col-sm-12 col-lg-4 aside-singel mobile-aside" style="height: auto !important;">
+                <div class="widget-content border p-3 bg-white shadow-sm p-3 mb-3 bg-body" style="border-radius: 8px;">
+                            <div class="card-header bg-transparent border-success header-sidebar fw-bold">Kirim Langsung Pertanyaan Ke Sinau riyen</div>
+                            <div class="card-body" style="color: #57cc99;">
+                                <form name="survey-form"  id="survey-form">
+                                    <div class="form-group">
+                                <label class="pt-3" for="Name" id="Name-label">Nama</label>
+                                <input type="text" class="form-control" id="Name" placeholder="Nama" name="Name">
+                            </div>
+                                    <div class="form-group">
+                                <label for="Email" id="Email-label">Email</label>
+                                <input type="email" class="form-control" id="Email" placeholder="Email" name="Email">
+                            </div>
+                                    <div class="form-group">
+                                <label for="Message" id="Message-label">Pesan</label>
+                                <textarea type="textarea" class="form-control" id="Message" placeholder="masukan pesan" name="Message"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-success mt-2 tombol-1">Kirim Pesan!</button>
+                                <button class="btn btn-success mt-2 tombol-2 d-none"><div class="spinner-border text-light" role="status">
+                                    <span class="visually-hidden"></span>
+                                </div></button>
+                            </div>
+                            </form>
+                            </div>
+                            <div class="card-footer bg-transparent border-success"></div>
+                 </div>
+                        
+                <div class="widget-content border p-3 bg-white shadow-sm p-3 mb-3 bg-body" style="border-radius: 8px;">
+                    <div class="card-header bg-transparent border-success header-sidebar fw-bold">Kategori artikel</div>
+                        <div class="card-body text-success">
+                                {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+                                
+                                <a class="text-success text-decoration-none"
+                                    href="/categories/{{ $name }}">
+                                    <li class="kategori-aside">{{ $name }}<br></li>
+                                </a>
+                                
+                                {{ end }}  
+                        </div>
+                        <div class="card-footer bg-transparent border-success"></div>      
+                </div>
+                <div class="card d-none" style="border-radius: 8px;">
+                    <div class="card-body">
+                        <img src="/image/dhcp.png" class="card-img-top" alt="iklansinauriyen">
+                    </div>
+                  </div>
+            </aside>  
+    </div>
+</div>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxB50zJ0THLZlAJ3DyAOTgwpZmFA4t4YbSle8HnqNqbJSROy54PGW6QLlT3eLi7CHFV/exec';
+    const form = document.forms['survey-form']
+    const btnKirim = document.querySelector('.tombol-1')
+    const btnLoading = document.querySelector('.tombol-2')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      
+      //nalika tombol kirim di klik
+      //ilangke tombol kirim katoke tombol loading
+      btnLoading.classList.toggle('d-none'
+        )
+      btnKirim.classList.toggle('d-none')
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          //ilangke tombol loading katoke tombol Kirim
+          btnLoading.classList.toggle('d-none')
+           btnKirim.classList.toggle('d-none')
+           //mereset form
+           form.reset();
+        console.log('Success!', response);
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+{{end}}

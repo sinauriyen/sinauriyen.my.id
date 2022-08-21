@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Lato&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;800&display=swap');
+* {
+    font-family: 'Inter', sans-serif;
+}
+.container .judul {
+    margin-top: 10rem;
+    color: #000;
+}
+.container-f a {
+    color: black;
+}
+/* footer .kaleng .kalengSatu .kalengDua a{
+    background-color: #555555;
+} */

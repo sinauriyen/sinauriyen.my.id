@@ -1,0 +1,38 @@
+baseURL = "/"
+languageCode = "id-id"
+title = "sinauriyen"
+theme = "jawa"
+summaryLength = 8
+paginate = 6
+[author]
+    name = "M Faruq Syarifudin"
+    homepage = "https://web.facebook.com/profile.php?id=100009944859170"
+    bio = "Game for fun"
+    image = "/assets/img/owner.jpg"
+
+
+[params]
+    Description = "Tanpa niat belajar tidak akan dimulai"
+[taxonomies]
+    category = "categories"
+    tag = "tags"
+    topik = "topik"
+    bahasa = "bahasa"
+
+[markup]
+taskLists = false
+
+
+
+
+
+[related]
+  includeNewer = false
+  threshold = 80
+  toLower = false
+[[related.indices]]
+  name = 'keywords'
+  weight = 100
+[[related.indices]]
+  name = 'date'
+  weight = 10
