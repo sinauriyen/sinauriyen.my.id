@@ -8,10 +8,12 @@ slug: cara-install-dan-konfigurasi-shell-zsh
 featured_image: "sinauriyen-zsh.png"
 cascade:
     banner: 
-    -
+tags:
+    - cli
+    - linux
 
 categories:
-    -
+    - linux
 
 bahasa:
     -
