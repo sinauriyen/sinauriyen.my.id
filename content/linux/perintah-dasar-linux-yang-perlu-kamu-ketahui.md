@@ -104,3 +104,8 @@ Oke kali ini saya akan membagikan perintah-perintah dasar linux beserta fungsiny
 
 ##### 3. **echo “baris baru” >> test.txt**
 * ini append(menambah) isi dari test.txt
+
+
+Oke mungkin cukup segitu dulu untuk kedepannya mungkin akan saya tambah.
+
+Sampai Jumpa.
