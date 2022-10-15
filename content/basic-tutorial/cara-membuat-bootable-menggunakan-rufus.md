@@ -60,6 +60,10 @@ setelah itu kalian tancapkan flashdisk atau bisa mengunakan card reader ke Kompu
 Kemudian setelah flashdisk terdeteksi, kalian klik saja di `Boot Selection` **SELECT**, arahkan ke file iso kalian misal disini saya akan membuat bootable linux mint:
 
 &nbsp;&nbsp;&nbsp;&nbsp;
+![b](/assets/img/bootable-f/rufus23.png "bootable-rufus")
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+&nbsp;&nbsp;&nbsp;&nbsp;
 ![b](/assets/img/bootable-f/bootable22.png "bootable-rufus")
 &nbsp;&nbsp;&nbsp;&nbsp;
 
