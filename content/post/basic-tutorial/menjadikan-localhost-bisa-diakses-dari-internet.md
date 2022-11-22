@@ -15,7 +15,7 @@ tags:
 
 
 categories:
-    -
+    - basic-tutorial
 
 bahasa:
     - Indonesia
