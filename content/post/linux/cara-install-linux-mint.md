@@ -1,6 +1,6 @@
 ---
 author: "Faruq 1935"
-draft: true
+draft: false
 date: 2022-11-14T10:13:48+07:00
 description: ""
 title: "langkah-langkah cara install linux mint untuk pemula"
@@ -80,4 +80,77 @@ Setelah kalian masuk ke dekstop live usb linux, langsung doubel-klik saja di ico
 &nbsp;&nbsp;&nbsp;&nbsp;
 
 ![b](/assets/img/install-linux-mint/mint-alternatif1.png "linuxmint")
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+* Pilih penyimpanan yang ingin kalian pakai
+* Pilih partisi yang kosong 
+* Pilih new partition table untuk membuat partisi linux mint yang baru
+ 
+![b](/assets/img/install-linux-mint/mintpartisi.png "linuxmint")
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+* Pilih continue
+
+![b](/assets/img/install-linux-mint/mintpartisi1.png "linuxmint")
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+* Untuk membuat partisi baru pilih tombol tambah/ples
+
+![b](/assets/img/install-linux-mint/mintpartisi2.png "linuxmint")
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+Di sini saya akan membuat partisi
+* `swap area` menambah RAM virtual, cukup 2048MB
+* `root` kemudian partisi root ini penting karena sistem linux akan di letakan disini untuk ukuran sesuaikan dengan penyimpanan kalian
+* `home` sebenarnya ini tidak terlalu di wajibkan karena kalian bisa membuat partisi root saja
+* `boot` jika UEFI kalian perlu membuat partisi /boot/efi cukup 250MB, kalu kalian masih BIOS tidak diperlukan
+
+
+![b](/assets/img/install-linux-mint/mintpartisi3.png "linuxmint")
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+> ext4 direkomendasikan. Ini adalah sistem file Linux yang paling populer.
+
+![b](/assets/img/install-linux-mint/root.png "linuxmint")
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+![b](/assets/img/install-linux-mint/home.png "linuxmint")
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+![b](/assets/img/install-linux-mint/partisiselesai.png "linuxmint")
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+`=======================================================================`
+`=======================================================================`
+
+#### F. Memilih Zona Waktu
+&nbsp;&nbsp;&nbsp;&nbsp; Kalian bisa klik pulau yang ada di peta sesuai tempat kalian tinggal
+atau kalian bisa ketikan saja di kolom pencarian
+
+![b](/assets/img/install-linux-mint/zonawaktu.png "linuxmint")
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+#### G. Siapa Kamu ?
+&nbsp;&nbsp;&nbsp;&nbsp;Isi saja dengan **Nama** kalian, untuk **Password** pastikan mudah diingat
+
+![b](/assets/img/install-linux-mint/form.png "linuxmint")
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+#### H. Tunggu sampai selesai proses instalasi Linux Mint
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+![b](/assets/img/install-linux-mint/selesailm.png "linuxmint")
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+**Proses instalasi linux mint selesai kalian bisa klik restart now, sebelum itu cabut bootable usb**
+
+![b](/assets/img/install-linux-mint/lmfinish.png "linuxmint")
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+![b](/assets/img/install-linux-mint/bootloder.png "linuxmint")
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+Tampilan linux mint cinnamon 21 menjalankan terminal `neofetch`
+
+![b](/assets/img/install-linux-mint/nef.png "linuxmint")
 &nbsp;&nbsp;&nbsp;&nbsp;
