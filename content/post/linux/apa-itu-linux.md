@@ -23,7 +23,7 @@ topik:
 
 ---
 
-Hallo hay kawan sinauriyen kali ini  saya akan sedikit menjelaskan `apa itu linux ?`, karena mungkin kalian tertarik dengan linux dan ingin mencobanya.
+Hallo hay kawan sinauriyen kali ini akan sedikit menjelaskan `apa itu linux ?`, karena mungkin kalian tertarik dengan linux dan ingin mencobanya.
 
 ### **1. Apa si linux itu ?**
 &nbsp;&nbsp;&nbsp;&nbsp;Linux adalah sistem operasi yang bersifat open source, yang artinya kode sumbernya dapat dilihat dan dimodifikasi oleh siapa saja. Linux pertama kali dikembangkan oleh Linus Torvalds pada tahun 1991 sebagai proyek pribadi, dan sejak itu telah menjadi sistem operasi yang sangat populer di kalangan pengguna komputer pribadi dan profesional.
