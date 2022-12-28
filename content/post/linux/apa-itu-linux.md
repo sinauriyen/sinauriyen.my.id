@@ -3,7 +3,7 @@ author: "Faruq 1935"
 draft: flase
 date: 2022-12-27T23:25:16Z
 description: ""
-title: "Apa Itu Linux"
+title: "Apa Itu Linux ?"
 slug: apa-itu-linux
 featured_image: "apaitulinux.png"
 cascade:
