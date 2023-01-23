@@ -28,7 +28,7 @@ Untuk cara installasi tidaklah sulit karena menggunakan GUI, oke langsung saja k
 
 
 #### **1. Pendahuluan**
-&nbsp;&nbsp;&nbsp;&nbsp;Pertama kalian perlu membuat Bootable ISO Linux mint 21 ya saya tidak akan jabarkan di sini karena saya sudah membuat tutorialnya: [Cara Membuat Bootable Menggunakan Rufus Di windows](https://sinauriyen.my.id/basic-tutorial/cara-membuat-bootable-menggunakan-rufus/ "tutorial-bootable")
+&nbsp;&nbsp;&nbsp;&nbsp;Pertama kalian perlu membuat Bootable ISO Linux mint 21 ya saya tidak akan jabarkan di sini karena saya sudah membuat tutorialnya: [Cara Membuat Bootable Menggunakan Rufus Di windows](https://sinauriyen.my.id/post/basic-tutorial/cara-membuat-bootable-menggunakan-rufus/ "tutorial-bootable")
 
 Kalian langsung bisa tancapkan flashidsk bootable linux mint 21 kalian ke PC/laptop,
 kemudian kalian bisa masuk ke bios (Boot Menu) dan pilih flashidsk bootable untuk caranya kalian bisa search di google masing-masing merek PC/laptop kalian.
