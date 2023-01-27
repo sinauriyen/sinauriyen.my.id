@@ -10,6 +10,9 @@ cascade:
     banner: 
     -
 
+tags:
+    - linux
+
 categories:
     -
 
