@@ -1,20 +1,20 @@
 # Redirect dari URL lama to URL baru
-redirect 301 https://sinauriyen.my.id/linux/perintah-dasar-linux-yang-perlu-kamu-ketahui/ https://sinauriyen.my.id/post/linux/perintah-dasar-linux-yang-perlu-kamu-ketahui/
+https://sinauriyen.my.id/linux/perintah-dasar-linux-yang-perlu-kamu-ketahui/ https://sinauriyen.my.id/post/linux/perintah-dasar-linux-yang-perlu-kamu-ketahui/ 301
 
-redirect 301 https://sinauriyen.my.id/asj/cara-install-debian-11-bullseye/ https://sinauriyen.my.id/post/asj/cara-install-debian-11-bullseye/
+https://sinauriyen.my.id/asj/cara-install-debian-11-bullseye/ https://sinauriyen.my.id/post/asj/cara-install-debian-11-bullseye/ 301
 
-redirect 301 https://sinauriyen.my.id/asj/tutorial-install-dan-konfigurasi-dhcp-server-debian-virtualbox/ https://sinauriyen.my.id/post/asj/tutorial-install-dan-konfigurasi-dhcp-server-debian-virtualbox/
+https://sinauriyen.my.id/asj/tutorial-install-dan-konfigurasi-dhcp-server-debian-virtualbox/ https://sinauriyen.my.id/post/asj/tutorial-install-dan-konfigurasi-dhcp-server-debian-virtualbox/ 301
 
-redirect 301 https://sinauriyen.my.id/asj/cara-install-dan-konfigurasi-dhcp-server-debian-virtualbox/ https://sinauriyen.my.id/post/asj/tutorial-install-dan-konfigurasi-dhcp-server-debian-virtualbox/
+https://sinauriyen.my.id/asj/cara-install-dan-konfigurasi-dhcp-server-debian-virtualbox/ https://sinauriyen.my.id/post/asj/tutorial-install-dan-konfigurasi-dhcp-server-debian-virtualbox/ 301
 
-redirect 301 https://sinauriyen.my.id/asj/cara-install-dan-konfigurasi-file-sharing-samba-di-debian/ https://sinauriyen.my.id/post/asj/cara-install-dan-konfigurasi-file-sharing-samba-di-debian/
+https://sinauriyen.my.id/asj/cara-install-dan-konfigurasi-file-sharing-samba-di-debian/ https://sinauriyen.my.id/post/asj/cara-install-dan-konfigurasi-file-sharing-samba-di-debian/ 301
 
-redirect 301 https://sinauriyen.my.id/linux/cara-install-dan-konfigurasi-shell-zsh/ https://sinauriyen.my.id/post/linux/cara-install-dan-konfigurasi-shell-zsh/
+https://sinauriyen.my.id/linux/cara-install-dan-konfigurasi-shell-zsh/ https://sinauriyen.my.id/post/linux/cara-install-dan-konfigurasi-shell-zsh/ 301
 
-redirect 301 https://sinauriyen.my.id/basic-tutorial/cara-membuat-bootable-menggunakan-rufus/ https://sinauriyen.my.id/post/basic-tutorial/cara-membuat-bootable-menggunakan-rufus/
+https://sinauriyen.my.id/basic-tutorial/cara-membuat-bootable-menggunakan-rufus/ https://sinauriyen.my.id/post/basic-tutorial/cara-membuat-bootable-menggunakan-rufus/ 301
 
-redirect 301 https://sinauriyen.my.id/categories/linux-terminal/ https://sinauriyen.my.id/categories/linux/
+https://sinauriyen.my.id/categories/linux-terminal/ https://sinauriyen.my.id/categories/linux/ 301
 
-redirect 301 https://sinauriyen.my.id/categories/shell https://sinauriyen.my.id/categories/linux/
+https://sinauriyen.my.id/categories/shell https://sinauriyen.my.id/categories/linux/ 301
 
-redirect 301 https://sinauriyen.my.id/tags/shell/ https://sinauriyen.my.id/tags/linux
+https://sinauriyen.my.id/tags/shell/ https://sinauriyen.my.id/tags/linux 301
